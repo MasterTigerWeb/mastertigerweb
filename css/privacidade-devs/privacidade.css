@@ -1,0 +1,27 @@
+.privacidade{
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-principal);
+}
+.privacidade p{
+    margin-top: 15px;
+    width: 80%;
+    text-align: justify;
+}
+.privacidade h2 {
+    color: white;
+}
+@media (max-width: 900px) {
+    .privacidade{
+        height: auto;
+        display: flex;
+        align-items: center;
+        background-color: var(--cor-principal);
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- JavaScript para abrir/fechar o menu -->
+    <script>
+      function toggleMobileMenu() {
+          var menu = document.querySelector('.mobile-menu');
+          menu.classList.toggle('open');
+      }
+
+      function closeMobileMenu() {
+            var menu = document.querySelector('.mobile-menu');
+            menu.classList.remove('open');
+        }
+  </script>
+    <title>Master Tiger</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header  id="inicio">
+      <div class="logo-container">
+        <img src="./assets/logo/logo-branco.png" alt="Logo da Master Tiger" width="84px">
+        <h1>Master Tiger</h1>
+    </div>
+
+    <nav class="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#instrutores">Instrutores</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#loc">Localização</a>
+        <a href="#horario">Horários</a>
+        <a href="#forms" class="button">Contato</a>
+    </nav>
+    
+    <div class="mobile-menu-icon mobiloDisplay">
+      <img src="./assets/icons/menu.svg" alt="ícone de menu" onclick="toggleMobileMenu()">
+    </div>
+    <!--<div class="mobile-menu-icon"><img src="/assets/icons/menu.svg" alt="icone de menu"></div>-->
+    </header>
+
+    <div class="mobile-menu">
+      <a href="#sobre" onclick="closeMobileMenu()">Sobre</a>
+        <a href="#instrutores" onclick="closeMobileMenu()">Instrutores</a>
+        <a href="#depoimentos" onclick="closeMobileMenu()">Depoimentos</a>
+        <a href="#loc" onclick="closeMobileMenu()">Localização</a>
+        <a href="#forms" onclick="closeMobileMenu()">Contato</a>
+    </div>
+
+    <!-- Home -->
+    <section class="home">
+        <div class="filter"></div>
+        <div class="infos-home">
+            <div class="texto-home">
+                <h1>MASTER TIGER DE TAEKWONDO</h1>
+                <p class="mobiloDisplayNone">Master Tiger Team, em Cachoeirinha - RS, oferece instrução esportiva para comunidade, buscando auxiliar crianças, jovens e adultos com serviços de coaching e treinamento para ajudar você a alcançar seus objetivos esportivos. Venha nos visitar e descubra seu potencial.</p>
+            </div>
+            <div class="redes">
+                <a href="https://www.facebook.com/people/Academia-Master-Tiger-TKD/100054390796355/">
+                    <div class="icons">
+                        <img src="./assets/icons/facebook.svg" alt="Botão para a abrir o perfil do Facebook.">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/mastertiger2023/">
+                    <div class="icons">
+                        <img src="./assets/icons/instagram.svg" alt="Botão para a abrir o perfil do Instagram.">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="icons">
+                        <img src="./assets/icons/wpp.svg" alt="Botão para a abrir o contato do Whatsapp.">
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!-- Bem-vindo -->
+    <section id="sobre" class="sobre">
+        <div class="bem-vindo">
+          <h2 class="titulo-sec centro branco"><span class="cor-simbolo">환영</span><br>BEM-VINDO A MASTER TIGER</h2>
+          <p>A Academia Master Tiger está localizada na cidade de Cachoeirinha e, há cerca de 30 anos, possui um projeto social criado pelo professor e diretor, Osmar Spido, que busca fazer a inclusão social de crianças, adolescentes e adultos, através do ensinamento gratuito da arte marcial, Taekwondo. </p>
+        </div>
+        <div class="slider-container">
+          <input type="radio" name="slider" id="item-1" checked>
+          <input type="radio" name="slider" id="item-2">
+          <input type="radio" name="slider" id="item-3">
+          <input type="radio" name="slider" id="item-4">
+          <input type="radio" name="slider" id="item-5">
+          <input type="radio" name="slider" id="item-6">
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img src="./assets/carrossel/image1.jpg" alt="song">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img src="./assets/carrossel/image2.jpg" alt="song">
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img src="./assets/carrossel/image3.jpg" alt="song">
+            </label>
+            <label class="card" for="item-4" id="song-4">
+              <img src="./assets/carrossel/image4.jpg" alt="song">
+            </label>
+            <label class="card" for="item-5" id="song-5">
+              <img src="./assets/carrossel/image5.jpg" alt="song">
+            </label>
+            <label class="card" for="item-6" id="song-6">
+              <img src="./assets/carrossel/image6.jpg" alt="song">
+            </label>
+          </div>
+        </div>
+        
+    </section>
+   
+    <!-- Instrutores -->
+    <section id="instrutores" class="instrutores fundo-laranja">
+        <div class="instrutor-filtro"></div>
+        <h2 class="titulo-sec centro preto">교사<br>Instrutores</h2>
+
+        <div class="instrutores-container ">
+            <div class="instrutores-card mobiloDisplayNone">
+                <img src="./assets/imgs/instrutor-osmar.jpg" alt="Imagem da coordenador Osmar Spido">
+                <div class="instrutores-info">
+                    <h2 class="titulo-texto">Osmar Spido</h2>
+                    <h3>Coordenador</h3>
+                </div>
+            </div>
+            <div class="instrutores-card mobiloDisplayNone">
+                <img src="./assets/imgs/instrutor-tamyres.jpg" alt="Imagem da instrutora Tamyres">
+                <div class="instrutores-info">
+                    <h2 class="titulo-texto">Tamyres Fischer</h2>
+                    <h3>Instrutora</h3>
+                </div>
+            </div>
+            <div class="instrutores-card-mobile mobiloDisplay">
+              <img src="./assets/imgs/instrutor-osmar.jpg" alt="Imagem da coordenador Osmar Spido">
+              <div class="instrutores-info">
+                  <h2 class="titulo-texto">Osmar Spido</h2>
+                  <h3>Coordenador</h3>
+              </div>
+          </div>
+          <div class="instrutores-card-mobile mobiloDisplay">
+              <img src="./assets/imgs/instrutor-tamyres.jpg" alt="Imagem da instrutora Tamyres">
+              <div class="instrutores-info">
+                  <h2 class="titulo-texto">Tamyres Fischer</h2>
+                  <h3>Instrutora</h3>
+              </div>
+          </div>
+        </div>
+        
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="carrossel-depoimento">
+        <div class="degrade"></div>
+        <div class="header">
+            <h2 class="titulo-sec esquerda branco"><spa class="cor-simbolo">증착</spa> DEPOIMENTOS </h2>
+            <div class="arrow-buttons mobiloDisplayNone">
+              <button onclick="moverParaDireita()"><img src="./assets/icons/arrow-right.svg" alt=""></button>
+              <button onclick="moverParaEsquerda()"><img src="./assets/icons/arrow-left.svg" alt=""></button>
+            </div>
+
+        </div>
+
+        <div class="carrossel-container">
+          <div class="carrossel-item">
+            <div class="cardText">
+                <img src="./assets/depoimentos/user-profile/user-carlos.jpg" alt="">
+              <p>Baa q nostalgia, foi aí aonde tudo começou, foi aonde eu conhece o Taekwondo, foi aí q tive o maior aprendizado, Saudades desse tempo ❤️🥋</p>
+              <h5>carlinhoos_051</h5>
+            </div>
+          </div>
+          <div class="carrossel-item">
+            <div class="cardText">
+                <img src="./assets/depoimentos/user-profile/user-projeto.jpg" alt="">
+              <p>Parabéns pelo trabalho 👏</p>
+              <h5>projeto_guerreiross</h5>
+            </div>
+          </div>
+          
+          <div class="carrossel-item">
+            <div class="cardText">
+                <img src="./assets/depoimentos/user-profile/user-pricila.jpg" alt="">
+              <p>Gratidão pela oportunidade de meu filho estar podendo participar deste maravilhoso projeto. 😍</p>
+              <h5>terapeutapriscilareal</h5>
+            </div>
+          </div>
+          <div class="carrossel-item">
+            <div class="cardText">
+                <img src="./assets/depoimentos/user-profile/user-lethy.jpg" alt="">
+              <p>Isso sim é uma família de vdd ❤️</p>
+              <h5>lethy.ramos</h5>
+            </div>
+          </div>
+          <div class="carrossel-item">
+            <div class="cardText">
+                <img src="./assets/depoimentos/user-profile/user-none.jpg" alt="">
+              <p>A melhor academia😍😍😍</p>
+              <h5>_isahjaqs</h5>
+            </div>
+        </div>
+      </div>
+        <div class="headerMobile mobiloDisplay">
+          <div class="arrow-buttons">
+            <button onclick="moverParaEsquerda()"><img src="./assets/icons/arrow-left.svg" alt=""></button>
+            <button onclick="moverParaDireita()"><img src="./assets/icons/arrow-right.svg" alt=""></button>
+          </div>
+
+      
+    </section>
+     <!-- Competições -->
+     <section class="competicoes">
+      <h2 class="titulo-sec centro branco"><span class="cor-simbolo">정보</span><br>informações</h2>
+
+      <div class="competicoes-container">
+          <div class="competicoes-info">
+              <img src="./assets/imgs/competicoes1.jpg" alt="">
+              
+              <h2 class="titulo-texto branco">Competições</h2>
+              <p>Oferecemos serviços de instrução para os níveis, desde iniciantes a competidores experientes.</p>
+          </div>
+
+          <div class="competicoes-info">
+              <img src="./assets/imgs/competicoes2.jpg" alt="">
+
+              <h2 class="titulo-texto branco">Aulas</h2>
+              <p>Aulas para aprimorar usa resistência, flexibilidade e coordenação muscular, promovendo o bem estar físico e mental.</p>
+          </div>
+      </div>
+
+    </section>
+
+      <!-- Infraestrutura -->
+      <section  class="infra">
+        <h2 class="titulo-sec esquerda preto">하부구조 Infraestrutura</h2>
+        <div class="infra-container">
+            <p>A Academia de Taekwondo Master Tiger possui um local espaçoso em que os alunos têm acesso a uma variedade de equipamentos de última geração, como sacos de pancada, protetores de impacto, equipamentos de sparring e aparelhos de condicionamento físico. Esses recursos ajudam a aprimorar as habilidades técnicas e físicas dos praticantes, proporcionando uma experiência de treinamento excepcional.</p>
+            <img src="./assets/imgs/equipamento1.jpg" alt="">
+        </div>
+      </section>
+
+      <!-- Formulário -->
+      <section id="forms" class="forms">
+        <h2 class="titulo-sec centro branco"><span class="cor-simbolo">메시지</span><br>Contato</h2>
+        <div class="forms-container">
+          <div class="forms-text">
+            <h3 class="titulo-texto branco mobiloDisplayNone">Formulário de <br> Contato Team Tiger</h3>
+            <p class="mobiloDisplayNone">Envie uma mensagem para a Team Tiger para obter mais informações sobre o projeto.</p>
+          </div>
+
+          <form class="forms-area" onsubmit="event.preventDefault(); validadeForm()">
+            <p class="mobiloDisplay">Envie uma mensagem para a Team Tiger para obter mais informações sobre o projeto.</p>
+            
+            <input type="text" id="name" placeholder="Seu Nome">
+            <small class="error"></small>
+
+            <input type="text" id="email" placeholder="Seu Email">
+            <small class="error"></small>
+
+            <textarea id="message" class="mensagem-area" placeholder="Sua mensagem" rows="6"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <button class="button" id="btn"  onclick="sendMail()">Enviar</button>
+                <p id="suscess"></p>
+            </div>
+          </form>
+        </div>
+
+      </section>
+
+      <!-- Localização -->
+      <section id="loc" class="loc">
+        <h2 class="titulo-sec esquerda branco"><span class="cor-simbolo">가족</span> Localização</h2>
+        <iframe class="loc-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.2916220427023!2d-51.0872068!3d-29.884696700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519721acf756335%3A0xc61ec6ba0be08273!2sR.%20Atl%C3%A2ntida%2C%201050%20-%20Jardim%20Bet%C3%A2nia%2C%20Cachoeirinha%20-%20RS%2C%2094970-680!5e0!3m2!1spt-BR!2sbr!4v1688424259659!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+     
+      <!-- Horário -->
+      <section class="horario" id="horario">
+        <h2 class="titulo-sec esquerda branco"><span class="cor-simbolo">일정</span> Horários</h2>
+        <div class="horario-container">
+          <div>
+            <p class="destaque">Terças-feiras e quintas-feiras</p>
+            <p>Até 13 anos</p>
+            <p>Das 19h as 20h</p>
+          </div>
+
+          
+          <div>
+            <p class="destaque">Acima de 14 anos</p>
+            <p>Das 20h as 21h</p>
+          </div>  
+        </div>
+      </section>
+
+      <!-- Rodapé -->
+      <footer>
+        <div class="footer-container">
+            <div class="footer-menu">
+              <a href="#inicio"><img src="./assets/logo/logo-branco.png" alt=""></a>
+                
+    
+                <nav class="mobiloDisplayNone">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#instrutores">Instrutores</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                    <a href="#loc">Localização</a>
+                </nav>
+            </div>
+    
+    
+            <div class="redes">
+                <a href="https://www.facebook.com/people/Academia-Master-Tiger-TKD/100054390796355/">
+                    <div class="icons">
+                        <img src="./assets/icons/facebook.svg" alt="Botão para a abrir o perfil do Facebook.">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/mastertiger2023/">
+                    <div class="icons">
+                        <img src="./assets/icons/instagram.svg" alt="Botão para a abrir o perfil do Instagram.">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="icons">
+                        <img src="./assets/icons/wpp.svg" alt="Botão para a abrir o contato do Whatsapp.">
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="linha"></div>
+
+        <div class="footer-copy">
+            <a href="">© 2023 - Todos Direitos Reservados</a>
+            <a href="./privacidade.html">Políticas de Privacidade</a>
+            <a href="./dev.html">Desenvedores</a>
+        </div>
+      </footer>
+
+</body>
+<script src="./scripts/script.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  (function () {
+    emailjs.init("f9roB_7B05Y5gpqLl");
+  })();
+</script>
+</html>

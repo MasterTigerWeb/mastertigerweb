@@ -1,0 +1,481 @@
+
+/*---- Geral ---*/
+*{
+    box-sizing: border-box;
+}
+
+.mobiloDisplay{display: none;}
+
+/*---- Botões CTA ---*/
+.button{
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 15px 5px 15px;
+    font-family: var(--font-principal);
+    color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
+}
+.button:hover{
+    background-color: var(--cor-button-hover);
+    cursor: pointer;
+    color: white;
+}
+
+/*---- Botões Redes Sociais ---*/
+.redes{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 33px 0px 0px;
+    padding: 8px;
+    background-color: var(--cor-secundaria);
+    border-radius: 100%;
+}
+.icons:hover{
+    background-color: var(--cor-button-hover);
+}
+.icons img{
+    width: 40px;
+}
+
+/*---- Seções ---*/
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.fundo-laranja{
+    background-color: var(--cor-secundaria);
+}
+
+/*---- Título da Seção ---*/
+.titulo-sec{
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 49px;
+    z-index: 2;
+}
+.centro{
+    text-align: center;
+}
+.esquerda{
+    margin-left: 134px;
+    text-align: left;
+    word-spacing: 36px;
+}
+.branco{
+    color: white;
+}
+.preto{
+    color: var(--cor-principal);
+}
+.cor-simbolo{
+    color: var(--cor-secundaria);
+}
+/*---- Título para Texto ---*/
+.titulo-texto{
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 49px;
+}
+.destaque{
+    font-weight: 800;
+}
+
+/*---- Paragrafo ---*/
+p {
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+}
+
+/*---- Cabeçalho ---*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 102px;
+    background-color: #0B0B0B;
+    color: white;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.logo-container img{
+    padding-right: 22px;
+}
+
+.logo-container h1{
+    font-size: 24px;
+}
+
+nav a{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 25px;
+}
+
+nav a:hover{
+    color: var(--cor-secundaria);
+}
+/* Estilos CSS para o menu lateral */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #ff8644;
+    color: #0B0B0B;
+    padding: 20px;
+    transition: display 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.mobile-menu.open {
+    display: inline;
+}
+
+.mobile-menu a {
+    display: block;
+    font-size: 24px;
+    padding: 14px;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Estilos CSS para o ícone do menu */
+.mobile-menu-icon {
+    position: absolute; 
+    top: 60px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.mobile-menu-icon img{
+    width: 25px;
+    height: 25px;
+}
+
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Oculta o menu principal em telas menores */
+    }
+
+    header{
+        height: 150px;
+    }
+    body{
+    overflow-y: none;
+    }
+}
+
+
+/*---- Home ---*/
+.home {
+    background-image: url(../assets/imgs/home.png);
+    background-size: cover;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+.infos-home{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+    margin-left: 8.5%;
+}
+.texto-home{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+.texto-home h1{
+    font-size: 90px;
+    font-weight: 800;
+}
+.texto-home p {
+    margin-top: 12px;
+    width: 70%;
+}
+.texto-home span{
+    display: none;
+}
+
+.filter{
+    background-color: #0000008a;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+/*---- Sobre ---*/
+.sobre {
+    width: 100%;
+    height: 110vh;
+    background-color: var(--cor-principal);
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bem-vindo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.bem-vindo h2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.bem-vindo p{
+    text-align: center;
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+
+/*---- Instrutores ---*/
+.instrutores{
+    justify-content: space-around;
+    align-items: center;
+}
+.instrutor-filtro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ff8644e0;
+    z-index: 0;
+}
+.instrutores-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+.instrutores-card{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 465px;
+}
+.instrutores-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.instrutores-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 133px;
+    background-color: var(--cor-principal);
+    color: white;
+}
+.instrutores-info h2{
+    margin-top: 10px;
+}
+
+/*---- Informações ---*/
+.competicoes{
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--cor-principal);
+}
+.competicoes-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+.competicoes-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.competicoes-info img{
+    margin-bottom: 15px;
+    object-fit: cover;
+    width: 480px;
+    height: 250px;
+}
+.competicoes-info p{
+    text-align: center;
+    width: 60%;
+}
+
+/*---- Infraestrutura ---*/
+.infra{
+    height: 80vh;
+    justify-content: space-around;
+    background-color: var(--cor-secundaria);
+}
+.infra-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.infra-container img{
+    object-fit:c over;
+    width: 580px;
+    height: 386px;
+}
+
+.infra-container p{
+    width: 40%;
+    color: var(--cor-principal);
+    margin-right: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*---- Formulário Contato ---*/
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor-principal);
+}
+.forms-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.forms-area{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.forms-text{
+    width: 40%;
+}
+.forms-text p{
+    margin-top: 10px;
+    width: 80%;
+}
+.forms h3{
+    font-size: 40px;
+}
+.forms input, textarea{
+    border: 2px solid #FF8744 ;
+    background-color: #0B0B0B;
+    margin: 10px 0px 10px 0px;
+    padding: 20px;
+    width: 582px;
+    color: white;
+    font-family: var(--font-principal);
+}
+
+.forms textarea {
+  height: 170px;
+}
+
+.forms ::-webkit-input-placeholder{
+    font-family: var(--font-principal);
+}
+
+.center .button {
+    padding: 10px 25px 10px 25px;
+}
+
+/*---- Localização ---*/
+.loc{
+    background-color: var(--cor-principal);
+    justify-content: space-around;
+}
+.loc-map{
+    width: 100%;
+    height: 80%;
+}
+
+/*---- Horário ---*/
+.horario{
+    height: 25vh;
+    background-color: var(--cor-principal);
+}
+.horario h2{
+    margin-top: 15px;
+}
+.horario-container{
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/*---- Rodapé ---*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: black;
+}
+.footer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-menu img{
+    width: 135px;
+}
+.footer-menu nav{
+    margin-left: 40px;
+}
+.linha{
+    margin-top: 20px;
+    width: 80%;
+    border: 1px solid #FFFFFF;
+}
+.footer-copy{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.footer-copy a{
+    font-size: 12px;
+    color: white;
+}

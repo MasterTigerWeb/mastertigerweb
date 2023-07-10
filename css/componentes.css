@@ -1,0 +1,199 @@
+  /*---- Carrossel de Imagens ----*/
+.sobre input[type=radio] {
+    display: none;
+  }
+  
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+  
+.cards {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.slider-container{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sobre img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+  #item-1:checked ~ .cards #song-6,
+  #item-2:checked ~ .cards #song-1,
+  #item-3:checked ~ .cards #song-2,
+  #item-4:checked ~ .cards #song-3,
+  #item-5:checked ~ .cards #song-4,
+  #item-6:checked ~ .cards #song-5 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+  }
+  
+  #item-1:checked ~ .cards #song-2,
+  #item-2:checked ~ .cards #song-3,
+  #item-3:checked ~ .cards #song-4,
+  #item-4:checked ~ .cards #song-5,
+  #item-5:checked ~ .cards #song-6,
+  #item-6:checked ~ .cards #song-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+  }
+  
+  #item-1:checked ~ .cards #song-1,
+  #item-2:checked ~ .cards #song-2,
+  #item-3:checked ~ .cards #song-3,
+  #item-4:checked ~ .cards #song-4,
+  #item-5:checked ~ .cards #song-5,
+  #item-6:checked ~ .cards #song-6 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+    
+ img {
+      box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+  }
+
+  #item-1:checked ~ .cards #song-3,
+  #item-1:checked ~ .cards #song-4,
+  #item-1:checked ~ .cards #song-5{
+    display: none;
+  }
+  #item-2:checked ~ .cards #song-4,
+  #item-2:checked ~ .cards #song-5,
+  #item-2:checked ~ .cards #song-6{
+    display: none;
+  }
+  #item-3:checked ~ .cards #song-5,
+  #item-3:checked ~ .cards #song-6,
+  #item-3:checked ~ .cards #song-1{
+    display: none;
+  }
+  #item-4:checked ~ .cards #song-6,
+  #item-4:checked ~ .cards #song-1,
+  #item-4:checked ~ .cards #song-2{
+    display: none;
+  }
+  #item-5:checked ~ .cards #song-1,
+  #item-5:checked ~ .cards #song-2,
+  #item-5:checked ~ .cards #song-3{
+    display: none;
+  }
+  #item-6:checked ~ .cards #song-2,
+  #item-6:checked ~ .cards #song-3,
+  #item-6:checked ~ .cards #song-4{
+    display: none;
+  }
+  
+  
+  #item-2:checked ~ .player #test {
+    transform: translateY(0);
+  }
+  
+  #item-3:checked ~ .player #test {
+    transform: translateY(-40px);
+  }
+  
+  #item-4:checked ~ .player #test {
+    transform: translateY(-80px);
+  }
+  
+  #item-5:checked ~ .player #test {
+    transform: translateY(-120px);
+  }
+  
+  #item-6:checked ~ .player #test {
+    transform: translateY(-160px);
+  }
+
+
+  /*---- Depoimentos ----*/
+.carrossel-depoimento {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  height: 100vh;
+  color: white;
+  background-color: var(--cor-principal);
+}
+  
+
+
+.carrossel-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: transform 0.5s ease;
+  margin-left: 5%;
+}
+
+.carrossel-item {
+  flex: 0 0 20%;
+  padding: 0 10px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  z-index: 10;
+  background-image: url(/assets/depoimentos/background-depoimento.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100px;
+}
+
+.header button{
+  float: right;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin-right: 20px;
+  background-color: var(--cor-secundaria);
+  border: none;
+}
+.header button:hover{
+  background-color: var(--cor-button-hover);
+  cursor: pointer;
+}
+
+.cardText {
+  border: 1px solid var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  color: white;
+  padding: 20px;
+  height: 250px;
+  width: 400px;
+}
+
+.cardText img{
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+.cardText p{
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.cardText h5{
+  font-weight: 600;
+}

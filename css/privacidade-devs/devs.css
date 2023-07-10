@@ -1,0 +1,29 @@
+.dev{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-principal);
+    text-align: center;
+}
+.dev p{
+    width: 80%;
+}
+.dev img{
+    width: 70px;
+
+}
+.dev h2{
+    margin-top: 15px;
+    color: white;
+}
+@media (max-width: 900px) {
+    .dev{
+        height: auto;
+        display: flex;
+        align-items: center;
+        background-color: var(--cor-principal);
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

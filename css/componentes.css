@@ -154,7 +154,7 @@
   align-items: center;
   height: 40%;
   z-index: 10;
-  background-image: url(/assets/depoimentos/background-depoimento.png);
+  background-image: url(../assets/depoimentos/background-depoimento.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100px;

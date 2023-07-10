@@ -1,8 +1,8 @@
 /* Estilos para telas menores */
 @media (max-width: 900px) {
 
-    body {
-        overflow-y: none;
+    html,body {
+        overflow-x: hidden;
     }
     section{
         height: auto;
